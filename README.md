@@ -8,3 +8,13 @@ A simple To-Do List application built with React. It allows users to add tasks, 
 - Remove tasks from the list.
 - Dynamic footer displaying the current year.
 - Responsive UI with user-friendly styles.
+
+## Built using
+
+- React
+- React-dom
+- React-scripts
+- JSX
+- CSS
+- JavaScript
+- HTML
