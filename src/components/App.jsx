@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ToDo from "./ToDo";
 import Input from "./Input";
-import Footer from './Footer'; 
+import Footer from "./Footer";
 
 function App() {
   const [items, setItems] = useState([]);
@@ -26,7 +26,7 @@ function App() {
         <h1>To-Do List</h1>
       </div>
       <Input addItems={addItems} />
-      <div>
+      <div className="task-list">
         <ul>
           {items.map((todoitem, index) => (
             <ToDo

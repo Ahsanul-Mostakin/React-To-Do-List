@@ -2,13 +2,20 @@ import React from "react";
 
 function ToDo(props) {
   return (
-    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "10px", borderBottom: "1px solid #ddd" }}>
-  
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        padding: "10px",
+        borderBottom: "1px solid #ddd",
+      }}
+    >
       <li>{props.text}</li>
 
       <button
         onClick={(e) => {
-          e.stopPropagation(); 
+          e.stopPropagation();
           props.onChecked(props.id);
         }}
         style={{
