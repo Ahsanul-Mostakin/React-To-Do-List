@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 90%; /* Adjust width for better mobile responsiveness */
   max-width: 400px;
   min-width: 250px;
   height: 90vh;
@@ -39,7 +39,7 @@ body {
 .heading h1 {
   transform: rotate(2deg);
   padding: 0.2rem 1.2rem;
-  border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+  border-radius: 20% 5% 20% 5% / 5% 20% 25% 20%;
   background-color: #fdcb6e;
   font-size: 1.5rem;
 }
@@ -79,10 +79,12 @@ button span {
 
 .task-list {
   flex: 1;
-  overflow-y: auto;
+  overflow-y: auto; /* Enable vertical scrolling when content overflows */
   margin-bottom: 1rem;
   padding: 0 5px;
-  max-height: calc(5 * 3rem);
+  max-height: calc(
+    4 * 3rem + 1rem
+  ); /* Adjust max-height to show scroll after 3-4 tasks (adjust 3rem based on your li height + padding) */
 }
 
 .task-list ul {
